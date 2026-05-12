@@ -2,10 +2,9 @@ import { useState, useEffect, useCallback } from "react";
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 // ─── Supabase Configuration ─────────────────────────────────────────────────
-const SUPABASE_URL = "https://sicjuoahqjlngqeuzwmj.supabase.co";
-const SUPABASE_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNpY2p1b2FocWpsbmdxZXV6d21qIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg1NzA1MTQsImV4cCI6MjA5NDE0NjUxNH0.PFJS9_SlEbG1MZwJqmcOHyaugJw_rMjuDnAJnqGWZ_o";
-const supabase = createClient(SUPABASE_URL, SUPABASE_ANON);
-
+// Keep your hardcoded values as fallbacks
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://sicjuoahqjlngqeuzwmj.supabase.co";
+const SUPABASE_ANON = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...";
 // ─── Theme Colors ──────────────────────────────────────────────────────────
 const C = {
   bg: "#0a0a0f",
