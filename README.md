@@ -1,4 +1,4 @@
-# RankForge - SEO Publishing Platform
+# Testing - SEO Publishing Platform
 
 A modern SEO publishing platform with backlink management, built with React and Supabase.
 
